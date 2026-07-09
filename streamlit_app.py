@@ -54,7 +54,7 @@ if ingredients_list:
         search_on = pd_df.loc[pd_df['FRUIT_NAME'] == fruit_chosen, 'SEARCH_ON'].iloc[0]
         st.write('The search value for ', fruit_chosen, ' is ', search_on, '.')
         st.subheader(fruit_chosen + ' Nutrition Information')
-        smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/{search_on}")
+        smoothiefroot_response = requests.get("https://www.smoothiefroot.com/api/fruit/{search_on}")
         # st.text(smoothiefroot_response) => this just gives the 'Response [200]' which generally means the API was successful
         #st.text(smoothiefroot_response.json()) # this convert the response so we can read the response object's contents.
         # lets put the JSON into a Dataframe  
