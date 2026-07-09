@@ -9,16 +9,6 @@ st.write(
   """
 )
 
-# display the Fruit options list
-#session = get_active_session()
-#my_dataframe = session.table("smoothies.public.fruit_options")
-#st.dataframe(data = my_dataframe, use_container_width=True)
-
-# removed the SELECT BOX
-
-# focus on the FRUIT_NAME column
-# To use a Snowpark column function named 'col', we need to import it into our app.
-
 # a text inout box, so that a customer can enter their name while ordering smoothie
 name_on_order = st.text_input('Name on Smoothie:')
 st.write('The name on your smoothie will be:', name_on_order)
